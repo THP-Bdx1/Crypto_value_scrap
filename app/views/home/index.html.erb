@@ -8,10 +8,10 @@
 <h2>Sélectionne la cryptomonnaie dont tu cherches la valeur</h2>
 
 
-<div class="form-group">
+<div class="styled-select black rounded">
 <%= form_for @currencycurrent, :class => "form-group", url: {action: 'show'} do |f| %>
 <%= f.collection_select :id, Currency.order(:name),:id,:name, {include_blank: false}, {class: "form-control"} %>
 <br>
-<%= f.submit "Fais le pls", class: "btn btn-outline-dark" %>
+<%= f.submit "Fais le pls" %>
 <% end %>
 </div>
