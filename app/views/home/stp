@@ -1,0 +1,38 @@
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>Nom</td>
+            <td>Valeur</td>
+        </tr>
+    </thead>
+    <tbody>
+        <% @currencies.each do |currency| %>
+        <tr>
+            <td>
+                <%= currency.name %>
+            </td>
+            <td>
+                <%= currency.value%>
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<%= form_for @currency do |f| %>
+    <%= f.collection_select :id, Currency.order(:name),:id,:name, {include_blank: false}, {class: "form-control"} %>
+<%= f.button :submit,'Create', class: "small button buttonSelect" %>
+    <% end %>
+
+
+    <form>
+Le nom de ta crypto
+<select required>
+<% @currencies.each do |currency|  %>
+<option value="<%=currency.name%>"><%=currency.name%></option>
+<% end %>
+</select>
+<div>
+<input type="submit" url="/show">
+</div>

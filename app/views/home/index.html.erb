@@ -1,0 +1,17 @@
+
+<br>
+<h1>Renseigne ta monnaie</h1>
+
+<br>
+<img src="https://media.giphy.com/media/2Ylp4JECyTYRi/giphy.gif">
+<br><br>
+<h2>Sélectionne la cryptomonnaie dont tu cherches la valeur</h2>
+
+
+<div class="form-group">
+<%= form_for @currencycurrent, :class => "form-group", url: {action: 'show'} do |f| %>
+<%= f.collection_select :id, Currency.order(:name),:id,:name, {include_blank: false}, {class: "form-control"} %>
+<br>
+<%= f.submit "Fais le pls", class: "btn btn-outline-dark" %>
+<% end %>
+</div>
