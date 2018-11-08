@@ -1,24 +1,22 @@
-# README
+# MOU-VIT SEARCHER
+![THP-BDX-LOGO](http://image.noelshack.com/fichiers/2018/45/1/1541412703-thpbdx1.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
+## L'ARGENT C'EST COOL
 
-Things you may want to cover:
+Avoue que t'as envie d'être riche avec les cryptos.
 
-* Ruby version
+---
+## PRESENTATION
 
-* System dependencies
+Le projet consiste à développer une application web de recherche de crypto.
 
-* Configuration
+Vous pouvez retrouver le site en production en sur https://cryptocurrenciesvalues.herokuapp.com/.
+C'est long à charger, on a pas fait d'écran de loading qui déboîte, mais on fait un CSS bling bling qui déboite. Voilà.
 
-* Database creation
+Si vous avez envie de faire en local, un petit rails db:create, rails db:migrate, et rails server des familles, et c'est joué !
 
-* Database initialization
+## NOTRE TEAM
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* **François Flous**, `Le Parrain VII : Cryptomafia`
+* **William Horel**, `Bac +7 Spé Croque-Monsieur`
